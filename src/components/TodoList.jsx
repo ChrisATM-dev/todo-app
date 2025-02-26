@@ -1,5 +1,5 @@
 import React from 'react'
-import { Todo } from './todo'
+import { Todo } from './Todo'
 
 export const TodoList = ({lista, todoDelete, todoUpdate, filtro, setFiltro}) => {
   const ordenarTareas = (tareas) => {
