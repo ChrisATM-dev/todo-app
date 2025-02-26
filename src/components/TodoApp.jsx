@@ -12,7 +12,7 @@ export const TodoApp = () => {
   
   return (
     <>
-      <TodoAdd todoAdd={todoAdd} setFiltro={setFiltro}/>
+      <TodoAdd todoAdd={todoAdd} setFiltro={setFiltro} lista={lista}/>
 
       <TodoList lista={lista} todoDelete={todoDelete} todoUpdate={todoUpdate} filtro={filtro} setFiltro={setFiltro} />
     </>
