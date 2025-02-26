@@ -1,0 +1,119 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+body{
+  min-height: 100vh;
+}
+
+.container{
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  gap: 10px;
+}
+
+.agregar{
+  border-radius: 10%;
+  background-color:#0d6efd;
+  border: none;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.descripcion{
+  width: 400px;
+}
+
+.titulo, .descripcion{
+  padding: 5px;
+  border: 1px solid rgb(226, 226, 226);
+}
+
+.container-tarea{
+  display: flex;
+  flex-direction: row ;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  padding-left: 1%;
+  margin: 10px 0px;
+}
+
+.container-tarea-texto{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.container-tarea-acciones{
+  display: flex;
+  gap: 10px; 
+  padding: 10px 10px;
+}
+
+.container-tarea-acciones button{
+  border-radius: 10%;
+  height: 40px;
+  border: none;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.eliminar{
+  background-color: rgb(199, 119, 119);
+}
+
+.enproceso{
+  background-color: rgb(180, 180, 251);
+}
+
+.terminado{
+  border-color: green;
+  background-color: rgb(180, 251, 180);
+}
+
+.contenedor-filtros{
+  display: flex;
+  height: 30px;
+  gap: 10px;
+}
+
+.boton-filtro{
+  border-radius: 10%;
+  background-color: #242424;
+  border: 2px solid #7a7a7a;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+.boton-filtro:hover{
+  background-color:#7a7a7a;
+}
+
+
+@media (max-width: 760px){
+  .container{
+    flex-direction: column;
+  }
+  .titulo{
+    width: 185px;
+    height: 29px;
+  }
+  .descripcion{
+    width: 330px;
+    height: 29px;
+  }
+  .agregar{
+    width: 80px;
+    height: 30px;
+  }
+  .container-tarea-acciones{
+    flex-direction: column;
+  }
+}
